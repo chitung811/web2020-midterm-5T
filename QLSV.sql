@@ -91,5 +91,15 @@ CREATE TABLE `KETQUA` (
   FOREIGN KEY (MaSV) REFERENCES SINHVIEN(MaSV)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-
+INSERT INTO `KETQUA` (`MaKQ`, `MaMH`, `MaSV`, `Diem`) VALUES
+('01', 'LTCB', 'CNTT01', '10'),
+('02', 'AV1', 'NNA01', '9'),
+('03', 'TN1', 'NNN01', '8'),
+('04', 'LSVN', 'VNH01', '9'),
+('05', 'HHC', 'SPH01', '5'),
+('06', 'NVA', 'SPA01', '6'),
+('07', 'VLC', 'SPL01', '10'),
+('08', 'HHKG', 'SPT01', '8'),
+('09', 'DH', 'SPV01', '10'),
+('10', 'LS1', 'SPS01', '8');
 
