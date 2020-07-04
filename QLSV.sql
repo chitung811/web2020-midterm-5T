@@ -53,16 +53,16 @@ CREATE TABLE `SINHVIEN` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `SINHVIEN` (`MaSV`, `HoTen`, `NgaySinh`, `Email`, `MaLop`) VALUES
-('CNTT01', 'Nguyễn Văn Anh', '2000-07-20', 'NVA01@gmail.com'),
-('NNA01', 'Nguyễn Văn Sinh', '2000-06-10', 'NVS007@gmail.com'),
-('NNN01', 'Bùi Văn Tam', '1999-01-05', 'BVT01@gmail.com'),
-('VNH01', 'Trần Thị Vân', '2000-07-18', 'TTV01@gmail.com'),
-('SPH01', 'Trần Quốc Huy', '2000-10-10', 'TQH01@gmail.com'),,
-('SPA01', 'Nguyễn Thị Nghĩa', '2000-08-08', 'NTN01@gmail.com'),
-('SPL01', 'Trần Vân Anh', '2000-02-02', 'TVA01@gmail.com'),),
-('SPT01', 'Nguyễn Đức Tài', '2000-06-18', 'NDT01@gmail.com'),,
-('SPV01', 'Hà Ngọc Bích', '2000-07-11', 'HNB01@gmail.com'),,
-('SPS01', 'Nguyễn Tâm', '2000-02-28', 'NT01@gmail.com'),;
+('CNTT01', 'Nguyễn Văn Anh', '2000-07-20', 'NVA01@gmail.com', 'CNTT1'),
+('NNA01', 'Nguyễn Văn Sinh', '2000-06-10', 'NVS007@gmail.com', 'NNA1'),
+('NNN01', 'Bùi Văn Tam', '1999-01-05', 'BVT01@gmail.com', 'NNN1'),
+('VNH01', 'Trần Thị Vân', '2000-07-18', 'TTV01@gmail.com', 'VNH1'),
+('SPH01', 'Trần Quốc Huy', '2000-10-10', 'TQH01@gmail.com', 'SPH1'),
+('SPA01', 'Nguyễn Thị Nghĩa', '2000-08-08', 'NTN01@gmail.com', 'SPA1'),
+('SPL01', 'Trần Vân Anh', '2000-02-02', 'TVA01@gmail.com', 'SPL1'),
+('SPT01', 'Nguyễn Đức Tài', '2000-06-18', 'NDT01@gmail.com', 'SPT1'),
+('SPV01', 'Hà Ngọc Bích', '2000-07-11', 'HNB01@gmail.com', 'SPV1'),
+('SPS01', 'Nguyễn Tâm', '2000-02-28', 'NT01@gmail.com', 'SPS1');
 
 CREATE TABLE `MONHOC` (
   `MaMH` varchar(20) NOT NULL PRIMARY KEY,
@@ -93,8 +93,8 @@ CREATE TABLE `KETQUA` (
 
 INSERT INTO `KETQUA` (`MaKQ`, `MaMH`, `MaSV`, `Diem`) VALUES
 ('01', 'LTCB', 'CNTT01', '10'),
-('02', 'AV1', 'NNA01', '9')
-('03', 'TN1', 'NNN01', '8')
+('02', 'AV1', 'NNA01', '9'),
+('03', 'TN1', 'NNN01', '8'),
 ('04', 'LSVN', 'VNH01', '9'),
 ('05', 'HHC', 'SPH01', '5'),
 ('06', 'NVA', 'SPA01', '6'),
