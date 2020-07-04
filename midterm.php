@@ -1,6 +1,6 @@
 <?php
 echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>MaSV</th><th>Diem</th></tr>";
+echo "<tr><th>MaSV</th><th>Ten</th><th>Diem</th></tr>";
  
 class TableRows extends RecursiveIteratorIterator { 
     function __construct($it) { 
@@ -29,8 +29,9 @@ $dbname = "midterm";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT MaSV,Diem
-							FROM ketqua"); 
+    $stmt = $conn->prepare("SELECT MaSV,Ten,Diem
+							FROM ketqua
+							JOIN sinhvien ON ketqua.MaSV = sinhvien.MaSV"); 
     $stmt->execute();
  
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC); 
